@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  padding: 20px;
+  background: #1e293b;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* AUTH PAGE */
+.auth-body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  width: 800px;
+  height: 500px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.form {
+  width: 50%;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container.active .overlay {
+  transform: translateX(100%);
+}
+
+.container.active .login {
+  transform: translateX(100%);
+}
+
+.container.active .register {
+  transform: translateX(-100%);
+}
+
+/* DASHBOARD */
+.nav {
+  background: #1e3a8a;
+  padding: 15px;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
