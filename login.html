@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="container" id="container">
+
+  <!-- Login -->
+  <div class="form login">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button onclick="goDashboard()">Login</button>
+  </div>
+
+  <!-- Register -->
+  <div class="form register">
+    <h2>Register</h2>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Register</button>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay">
+    <div>
+      <h2 id="text">New here?</h2>
+      <button onclick="toggle()">Switch</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
